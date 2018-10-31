@@ -3,9 +3,9 @@ package com.moreo.common.base;
 import com.moreo.common.constants.HTTPEnum;
 import com.moreo.common.utils.MoreoResponse;
 
-public abstract class BaseService {
-    final HTTPEnum SUCCESS = HTTPEnum.SUCCESS;
-    final HTTPEnum FAILED = HTTPEnum.FAILED;
+public abstract class BaseAPIService {
+    private final HTTPEnum SUCCESS = HTTPEnum.SUCCESS;
+    private final HTTPEnum FAILED = HTTPEnum.FAILED;
 
     protected MoreoResponse setResultFailed(String message, Object data) {
         return setResult(FAILED.getCode(), message, data);

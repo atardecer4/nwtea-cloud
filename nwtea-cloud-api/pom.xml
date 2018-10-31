@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="httpEnum://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="httpEnum://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="httpEnum://maven.apache.org/POM/4.0.0 httpEnum://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>nwtea-cloud-parent</artifactId>
         <groupId>com.moreo</groupId>
@@ -13,6 +13,14 @@
         <module>nwtea-cloud-api-user</module>
     </modules>
     <artifactId>nwtea-cloud-api</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.moreo</groupId>
+            <artifactId>nwtea-cloud-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
